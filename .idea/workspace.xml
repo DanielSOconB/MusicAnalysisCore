@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba442e3-a6ed-43d0-bc7d-6619daa5a733" name="Changes" comment="httpReqs" />
+    <list default="true" id="8ba442e3-a6ed-43d0-bc7d-6619daa5a733" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +21,7 @@
         <option value="FastAPI test_main" />
         <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -98,6 +103,12 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in test_app.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MusicAnalysisCore" />
       <option name="ENV_FILES" value="" />
@@ -174,7 +185,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733023766487</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="requirements">
+      <option name="closed" value="true" />
+      <created>1733023974631</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733023974631</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update">
+      <option name="closed" value="true" />
+      <created>1733024010773</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733024010773</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +213,9 @@
     <MESSAGE value="ignoring more stuff" />
     <MESSAGE value="gitignore fix" />
     <MESSAGE value="httpReqs" />
-    <option name="LAST_COMMIT_MESSAGE" value="httpReqs" />
+    <MESSAGE value="requirements" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MusicAnalysisCore$.coverage" NAME=" Coverage Results" MODIFIED="1733016363911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

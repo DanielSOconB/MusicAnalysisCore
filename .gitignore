@@ -1,5 +1,4 @@
-# IntelliJ IDEA/JetBrains IDE-related file
-.idea/workspace.xml
 
-# HTTP request logs
+.idea/workspace.xml
 http-request-log.http
+/.idea
