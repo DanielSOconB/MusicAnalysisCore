@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba442e3-a6ed-43d0-bc7d-6619daa5a733" name="Changes" comment="ignoring more stuff" />
+    <list default="true" id="8ba442e3-a6ed-43d0-bc7d-6619daa5a733" name="Changes" comment="httpReqs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +158,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733021878945</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="gitignore fix">
+      <option name="closed" value="true" />
+      <created>1733023739534</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733023739534</updated>
+    </task>
+    <task id="LOCAL-00004" summary="httpReqs">
+      <option name="closed" value="true" />
+      <created>1733023766487</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733023766487</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,10 +184,12 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="test for excluding some files" />
     <MESSAGE value="ignoring more stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignoring more stuff" />
+    <MESSAGE value="gitignore fix" />
+    <MESSAGE value="httpReqs" />
+    <option name="LAST_COMMIT_MESSAGE" value="httpReqs" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MusicAnalysisCore$.coverage" NAME=" Coverage Results" MODIFIED="1733016363911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MusicAnalysisCore$MusicAnalysisCore.coverage" NAME="MusicAnalysisCore Coverage Results" MODIFIED="1733020698420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/MusicAnalysisCore$MusicAnalysisCore.coverage" NAME="MusicAnalysisCore Coverage Results" MODIFIED="1733023611793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
