@@ -1,0 +1,120 @@
+# Test the root endpoint
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+# Test audio analysis with a valid WAV file
+POST http://127.0.0.1:8000/analyze/
+Accept: application/json
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="test_audio.wav"
+Content-Type: audio/wav
+
+< ./test_files/test_audio.wav
+--boundary
+Content-Disposition: form-data; name="user_id"
+
+test_user
+--boundary--
+
+###
+
+# Test audio analysis with a valid MP3 file
+POST http://127.0.0.1:8000/analyze/
+Accept: application/json
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="test_audio.mp3"
+Content-Type: audio/mpeg
+
+< ./test_files/test_audio.mp3
+--boundary
+Content-Disposition: form-data; name="user_id"
+
+test_user
+--boundary--
+
+###
+
+# Test missing file
+POST http://127.0.0.1:8000/analyze/
+Accept: application/json
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="user_id"
+
+test_user
+--boundary--
+
+###
+
+# Test missing user_id
+POST http://127.0.0.1:8000/analyze/
+Accept: application/json
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="test_audio.wav"
+Content-Type: audio/wav
+
+< ./test_files/test_audio.wav
+--boundary--
+
+###
+
+# Test unsupported file type
+POST http://127.0.0.1:8000/analyze/
+Accept: application/json
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="example.txt"
+Content-Type: text/plain
+
+< ./test_files/example.txt
+--boundary
+Content-Disposition: form-data; name="user_id"
+
+test_user
+--boundary--
+
+###
+
+# Test large file
+POST http://127.0.0.1:8000/analyze/
+Accept: application/json
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="large_audio.mp3"
+Content-Type: audio/mpeg
+
+< ./test_files/large_audio.mp3
+--boundary
+Content-Disposition: form-data; name="user_id"
+
+test_user
+--boundary--
+
+###
+
+# Test corrupted file
+POST http://127.0.0.1:8000/analyze/
+Accept: application/json
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="corrupted_audio.wav"
+Content-Type: audio/wav
+
+< ./test_files/corrupted_audio.wav
+--boundary
+Content-Disposition: form-data; name="user_id"
+
+test_user
+--boundary--
